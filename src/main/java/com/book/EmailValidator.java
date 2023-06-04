@@ -1,4 +1,4 @@
-package com.microsoft.azure;
+package com.book;
 
 import org.apache.maven.surefire.shade.org.apache.commons.lang3.StringUtils;
 

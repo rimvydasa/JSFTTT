@@ -1,4 +1,4 @@
-package capter2;
+package com.book;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;

@@ -1,4 +1,4 @@
-package capter2;
+package com.book;
 
 import org.apache.maven.surefire.shade.org.apache.commons.lang3.StringUtils;
 
@@ -30,8 +30,8 @@ public class AlphaValidator {
     public void validAbc(FacesContext context, UIComponent uiComponent, Object value) {
         HtmlInputText inputText = (HtmlInputText) uiComponent;
         String actualValue = (String) value;
-        if (!StringUtils.isAlphaSpace(actualValue)) {
-            FacesMessage facesMessage = new FacesMessage(inputText.getLabel() + " Testas-12333");
+        if (!StringUtils.isAlphaSpace((String) actualValue)) {
+            FacesMessage facesMessage = new FacesMessage(inputText.getLabel() + " Testas");
             throw new ValidatorException(facesMessage);
         }
     }
