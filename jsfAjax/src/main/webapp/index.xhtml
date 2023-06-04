@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<h:head >
+   <title>JSF Ajax Demo Html5</title>
+</h:head>
+<h:body>
+   <h2>JSF FLOW</h2>
+   <h:form>
+      <h:commandLink action="customerinfo">
+         <h:outputText value="Enter Customer Information"/>
+      </h:commandLink>
+<!--      <h:panelGrid columns="2">-->
+<!--         <h:outputText value="Text input for ajax update"/>-->
+<!--         <h:inputText id="textInput" value="#{controller.text}">-->
+<!--            <f:ajax render="textVal" event="keyup"/>-->
+<!--         </h:inputText>-->
+<!--         <h:outputLabel value="Output ajax"/>-->
+<!--         <h:outputText id="textVal" value="#{controller.text}"/>-->
+<!--      </h:panelGrid>-->
+<!--      <hr/>-->
+<!--      <h:panelGrid columns="2">-->
+<!--         <h:outputText value="First value"/>-->
+<!--         <h:inputText id="firstValue" value="#{controller.firstOperand}" size="3"/>-->
+<!--         <h:outputText value="Second value"/>-->
+<!--         <h:inputText id="second" value="#{controller.secondOperand}" size="3"/>-->
+<!--         <h:outputText value="Total"/>-->
+<!--         <h:outputText id="sum" value="#{controller.total}"/>-->
+<!--         <h:commandButton-->
+<!--                 actionListener="#{controller.calculateTotal}"-->
+<!--                 value="Calculate Sum">-->
+<!--            <f:ajax execute="firstValue second" render="sum"/>-->
+<!--         </h:commandButton>-->
+<!--      </h:panelGrid>-->
+   </h:form>
+</h:body>
+</html>
