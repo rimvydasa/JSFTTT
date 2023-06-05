@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html">
 <h:head>
     <h:outputText value="First page"/>
 </h:head>
@@ -13,6 +13,11 @@
         <h:panelGrid columns="2">
             <h:outputText for="firstName" value="First Name"/>
             <h:inputText id="firstName" value="#{customer.firstName}"/>
+
+            <h:outputText for="lastName" value="Last Name"/>
+            <h:inputText id="lastName" value="#{customer.lastName}"/>
+
+            <p:commandButton id="nextButton"  value="Next" action="customerinfo-page2"/>
         </h:panelGrid>
     </h:form>
 </h:body>

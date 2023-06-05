@@ -1,4 +1,4 @@
-package com.example.jsfajax;
+package com.example.faceflow;
 
 import javax.faces.flow.FlowScoped;
 import javax.inject.Named;

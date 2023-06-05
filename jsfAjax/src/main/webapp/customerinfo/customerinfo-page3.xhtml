@@ -4,8 +4,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html">
+<h:head>
+    <h:outputLabel value="Finally info page"/>
+</h:head>
+<h:body>
+    <h:form>
+        <h:panelGrid columns="2">
+            <h:outputLabel for="firstName" value="FirstName"/>
+            <h:outputLabel id="firstName" value="#{customer.firstName}"/>
+
+            <h:outputLabel for="lastName" value="LastName"/>
+            <h:outputLabel id="lastName" value="#{customer.firstName}"/>
+
+            <h:outputLabel for="line1" value="Line1"/>
+            <h:outputLabel id="line1" value="#{customer.addrLine1}"/>
+
+            <h:outputLabel for="line2" value="Line2"/>
+            <h:outputLabel id="line2" value="#{customer.addrLine2}"/>
+
+            <h:outputLabel for="city" value="City"/>
+            <h:outputLabel id="city" value="#{customer.addrCity}"/>
+
+            <h:outputLabel for="state" value="State"/>
+            <h:outputLabel id="state" value="#{customer.state}"/>
+
+            <h:outputLabel for="phoneHome" value="Phone home"/>
+            <h:outputLabel id="phoneHome" value="#{customer.phoneHome}"/>
+
+            <h:outputLabel for="phoneWork" value="Phone work"/>
+            <h:outputLabel id="phoneWork" value="#{customer.phoneWork}"/>
+
+            <h:outputLabel for="phoneMobile" value="Phone mobile"/>
+            <h:outputLabel id="phoneMobile" value="#{customer.phoneMobile}"/>
+
+            <p:panelGroup>
+                <h:commandButton value="Yes" action="customerinfo-return"/>
+                <h:commandButton value="No" action="customerinfo"/>
+            </p:panelGroup>
+        </h:panelGrid>
+    </h:form>
+</h:body>
 </html>
